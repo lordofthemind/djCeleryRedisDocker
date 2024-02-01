@@ -129,12 +129,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# djCeleryRedisDocker/settings.py
 
-# Celery Configuration
+# Use RabbitMQ as the message broker
 CELERY_BROKER_URL = 'pyamqp://guest:guest@localhost:5672//'
-CELERY_RESULT_BACKEND = 'rpc://'
-CELERY_ACCEPT_CONTENT = ['json']
-CELERY_TASK_SERIALIZER = 'json'
-CELERY_RESULT_SERIALIZER = 'json'
-CELERY_TIMEZONE = 'UTC'

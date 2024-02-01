@@ -9,11 +9,10 @@ django-seed = "*"
 psycopg2-binary = "*"
 django-schema-graph = "*"
 environs = "==10.3.0"
-celery = "*"
-redis = "*"
+celery = {extras = ["librabbitmq"], version = "*"}
 
 [dev-packages]
 
 [requires]
 python_version = "3.11"
-python_full_version = "3.11.7"
+python_full_version = "3.11.2"
